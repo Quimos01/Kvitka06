@@ -30,4 +30,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Package</name>
+            <url>https://maven.pkg.github.com/Quimos01/Kvitka06</url>
+        </repository>
+    </distributionManagement>
 </project>
