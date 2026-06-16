@@ -64,6 +64,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: pack
+    permissions:
+      contents: read
+      packages: write
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
